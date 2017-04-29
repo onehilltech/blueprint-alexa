@@ -1,0 +1,31 @@
+{
+  "name": "@onehilltech/blueprint-alexa",
+  "description": "Blueprint.js module for Alexa",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./lib",
+  "scripts": {
+    "test": "env NODE_ENV=test mocha --recursive tests/unit",
+    "start-server": "env NODE_ENV=production forever -o ./app/temp/logs/output.log -e ./app/temp/logs/error.log start ./app/index.js",
+    "stop-server": "env NODE_ENV=production forever stop app/index.js"
+  },
+  "dependencies": {
+    "@onehilltech/blueprint": "^3.0.0-13",
+    "alexa-app": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "superagent": "^3.3.0",
+    "supertest": "^2.0.1"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
+  },
+  "keywords": [
+    "blueprint",
+    "blueprint-module"
+  ]
+}
