@@ -14,10 +14,10 @@
     "alexa-app": "^4.0.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0",
     "superagent": "^3.3.0",
-    "supertest": "^2.0.1"
+    "supertest": "^3.0.0"
   },
   "license": "Apache-2.0",
   "engines": {
